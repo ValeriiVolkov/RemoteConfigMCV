@@ -1,0 +1,151 @@
+2020-03-11 19:24:54.768 1527-1527/? I/co.cheapshot.v: Late-enabling -Xcheck:jni
+2020-03-11 19:24:54.795 1527-1527/? E/co.cheapshot.v: Unknown bits set in runtime_flags: 0x8000
+2020-03-11 19:24:54.833 1527-1527/? I/co.cheapshot.v: The ClassLoaderContext is a special shared library.
+2020-03-11 19:24:55.798 1527-1667/? D/FirebaseRemoteConfig: Persisted config file was not found.
+    java.io.FileNotFoundException: /data/user/0/co.cheapshot.v1/files/persisted_config: open failed: ENOENT (No such file or directory)
+        at libcore.io.IoBridge.open(IoBridge.java:496)
+        at java.io.FileInputStream.<init>(FileInputStream.java:159)
+        at android.app.ContextImpl.openFileInput(ContextImpl.java:600)
+        at android.content.ContextWrapper.openFileInput(ContextWrapper.java:206)
+        at com.google.firebase.remoteconfig.internal.LegacyConfigsHandler.readPersistedConfig(com.google.firebase:firebase-config@@19.1.1:339)
+        at com.google.firebase.remoteconfig.internal.LegacyConfigsHandler.getConvertedLegacyConfigs(com.google.firebase:firebase-config@@19.1.1:196)
+        at com.google.firebase.remoteconfig.internal.LegacyConfigsHandler.saveLegacyConfigsIfNecessary(com.google.firebase:firebase-config@@19.1.1:151)
+        at com.google.firebase.remoteconfig.RemoteConfigComponent$$Lambda$4.call(Unknown Source:2)
+        at com.google.android.gms.tasks.zzv.run(Unknown Source:2)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+        at java.lang.Thread.run(Thread.java:919)
+     Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+        at libcore.io.Linux.open(Native Method)
+        at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+        at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+        at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+        at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+        at libcore.io.IoBridge.open(IoBridge.java:482)
+        at java.io.FileInputStream.<init>(FileInputStream.java:159) 
+        at android.app.ContextImpl.openFileInput(ContextImpl.java:600) 
+        at android.content.ContextWrapper.openFileInput(ContextWrapper.java:206) 
+        at com.google.firebase.remoteconfig.internal.LegacyConfigsHandler.readPersistedConfig(com.google.firebase:firebase-config@@19.1.1:339) 
+        at com.google.firebase.remoteconfig.internal.LegacyConfigsHandler.getConvertedLegacyConfigs(com.google.firebase:firebase-config@@19.1.1:196) 
+        at com.google.firebase.remoteconfig.internal.LegacyConfigsHandler.saveLegacyConfigsIfNecessary(com.google.firebase:firebase-config@@19.1.1:151) 
+        at com.google.firebase.remoteconfig.RemoteConfigComponent$$Lambda$4.call(Unknown Source:2) 
+        at com.google.android.gms.tasks.zzv.run(Unknown Source:2) 
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) 
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) 
+        at java.lang.Thread.run(Thread.java:919) 
+2020-03-11 19:24:55.806 1527-1527/? I/FirebaseInitProvider: FirebaseApp initialization successful
+2020-03-11 19:24:55.815 1527-1527/? I/CrashlyticsInitProvider: CrashlyticsInitProvider skipping initialization
+2020-03-11 19:24:55.828 1527-1527/? W/com.facebook.UserSettingsManager: You haven't set a value for AdvertiserIDCollectionEnabled. Set the flag to TRUE if you want to collect Advertiser ID for better advertising and analytics results. To request user consent before collecting data, set the flag value to FALSE, then change to TRUE once user consent is received. Learn more: https://developers.facebook.com/docs/app-events/getting-started-app-events-android#disable-auto-events.
+2020-03-11 19:24:55.864 1527-1664/co.cheapshot.v1 I/FA: App measurement initialized, version: 21028
+2020-03-11 19:24:55.864 1527-1664/co.cheapshot.v1 I/FA: To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+2020-03-11 19:24:55.864 1527-1664/co.cheapshot.v1 I/FA: To enable faster debug mode event logging run:
+      adb shell setprop debug.firebase.analytics.app co.cheapshot.v1
+2020-03-11 19:24:55.877 1527-1690/co.cheapshot.v1 D/NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+2020-03-11 19:24:55.916 1527-1673/co.cheapshot.v1 V/FA: Deferring to Google Analytics for Firebase for event data collection. https://goo.gl/J1sWQy
+2020-03-11 19:24:55.920 1527-1703/co.cheapshot.v1 I/DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:11 and remote module com.google.android.gms.measurement.dynamite:0
+2020-03-11 19:24:55.920 1527-1703/co.cheapshot.v1 I/DynamiteModule: Selected local version of com.google.android.gms.measurement.dynamite
+2020-03-11 19:24:55.925 1527-1527/co.cheapshot.v1 W/FirebaseRemoteConfig: No value of type 'Boolean' exists for parameter key 'check_ssl_certificate'.
+2020-03-11 19:24:55.929 1527-1673/co.cheapshot.v1 I/DynamiteModule: Considering local module com.google.android.gms.ads.dynamite:0 and remote module com.google.android.gms.ads.dynamite:21200
+2020-03-11 19:24:55.929 1527-1673/co.cheapshot.v1 I/DynamiteModule: Selected remote version of com.google.android.gms.ads.dynamite, version >= 21200
+2020-03-11 19:24:55.929 1527-1673/co.cheapshot.v1 V/DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+2020-03-11 19:24:55.946 1527-1673/co.cheapshot.v1 I/DynamiteLoaderV2: [71] AdsFdrDynamite.integ
+2020-03-11 19:24:55.948 1527-1673/co.cheapshot.v1 W/co.cheapshot.v: ClassLoaderContext type mismatch. expected=PCL, found=DLC (PCL[] | DLC[];PCL[/data/app/co.cheapshot.v1-gAlY1IDxRjYnXX112WE2YQ==/base.apk*3355217495:/data/app/co.cheapshot.v1-gAlY1IDxRjYnXX112WE2YQ==/base.apk!classes2.dex*1415018965:/data/app/co.cheapshot.v1-gAlY1IDxRjYnXX112WE2YQ==/base.apk!classes3.dex*31975996:/data/app/co.cheapshot.v1-gAlY1IDxRjYnXX112WE2YQ==/base.apk!classes4.dex*2331753115:/data/app/co.cheapshot.v1-gAlY1IDxRjYnXX112WE2YQ==/base.apk!classes5.dex*993908143:/data/app/co.cheapshot.v1-gAlY1IDxRjYnXX112WE2YQ==/base.apk!classes6.dex*1071682978:/data/app/co.cheapshot.v1-gAlY1IDxRjYnXX112WE2YQ==/base.apk!classes7.dex*2464548180:/data/app/co.cheapshot.v1-gAlY1IDxRjYnXX112WE2YQ==/base.apk!classes8.dex*1455364019]{PCL[/system/framework/org.apache.http.legacy.jar*1038351580]})
+2020-03-11 19:24:55.949 1527-1673/co.cheapshot.v1 W/co.cheapshot.v: Found duplicate classes, falling back to extracting from APK : /data/user_de/0/com.google.android.gms/app_chimera/m/00000129/dl-AdsFdrDynamite.integ_21207000000.apk
+2020-03-11 19:24:55.949 1527-1673/co.cheapshot.v1 W/co.cheapshot.v: NOTE: This wastes RAM and hurts startup performance.
+2020-03-11 19:24:55.949 1527-1673/co.cheapshot.v1 W/co.cheapshot.v: Found duplicated class when checking oat files: 'Landroidx/browser/browseractions/BrowserActionsFallbackMenuView;' in /data/user_de/0/com.google.android.gms/app_chimera/m/00000129/dl-AdsFdrDynamite.integ_21207000000.apk and /data/app/co.cheapshot.v1-gAlY1IDxRjYnXX112WE2YQ==/base.apk
+2020-03-11 19:24:56.017 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (greylist,core-platform-api, reflection, allowed)
+2020-03-11 19:24:56.017 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (greylist,core-platform-api, reflection, allowed)
+2020-03-11 19:24:56.017 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (greylist,core-platform-api, reflection, allowed)
+2020-03-11 19:24:56.018 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (greylist,core-platform-api, reflection, allowed)
+2020-03-11 19:24:56.028 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Ldalvik/system/CloseGuard;->get()Ldalvik/system/CloseGuard; (greylist,core-platform-api, reflection, allowed)
+2020-03-11 19:24:56.028 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Ldalvik/system/CloseGuard;->open(Ljava/lang/String;)V (greylist,core-platform-api, reflection, allowed)
+2020-03-11 19:24:56.028 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Ldalvik/system/CloseGuard;->warnIfOpen()V (greylist,core-platform-api, reflection, allowed)
+2020-03-11 19:24:56.051 1527-1527/co.cheapshot.v1 W/Glide: Failed to find GeneratedAppGlideModule. You should include an annotationProcessor compile dependency on com.github.bumptech.glide:compiler in your application and a @GlideModule annotated AppGlideModule implementation or LibraryGlideModules will be silently ignored
+2020-03-11 19:24:56.150 1527-1527/co.cheapshot.v1 W/FirebaseRemoteConfig: No value of type 'Boolean' exists for parameter key 'check_ssl_certificate'.
+2020-03-11 19:24:56.207 1527-1527/co.cheapshot.v1 I/CrashlyticsCore: Initializing Crashlytics Core 2.7.0.33
+2020-03-11 19:24:56.253 1527-1527/co.cheapshot.v1 I/co.cheapshot.v: The ClassLoaderContext is a special shared library.
+2020-03-11 19:24:56.256 1527-1527/co.cheapshot.v1 I/co.cheapshot.v: The ClassLoaderContext is a special shared library.
+2020-03-11 19:24:56.300 1527-1527/co.cheapshot.v1 I/DynamiteModule: Considering local module com.google.android.gms.ads.dynamite:0 and remote module com.google.android.gms.ads.dynamite:21200
+2020-03-11 19:24:56.300 1527-1527/co.cheapshot.v1 I/DynamiteModule: Selected remote version of com.google.android.gms.ads.dynamite, version >= 21200
+2020-03-11 19:24:56.303 1527-1527/co.cheapshot.v1 D/DynamitePackage: Instantiated singleton DynamitePackage.
+2020-03-11 19:24:56.303 1527-1527/co.cheapshot.v1 D/DynamitePackage: Instantiating com.google.android.gms.ads.ChimeraMobileAdsSettingManagerCreatorImpl
+2020-03-11 19:24:56.313 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+2020-03-11 19:24:56.313 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+2020-03-11 19:24:56.313 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2020-03-11 19:24:56.313 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2020-03-11 19:24:56.323 1527-1527/co.cheapshot.v1 I/Ads: Updating ad debug logging enablement.
+2020-03-11 19:24:56.353 1527-1527/co.cheapshot.v1 I/WebViewFactory: Loading com.google.android.webview version 80.0.3987.132 (code 398713233)
+2020-03-11 19:24:56.401 1527-1527/co.cheapshot.v1 I/cr_LibraryLoader: Loaded native library version number "80.0.3987.132"
+2020-03-11 19:24:56.418 1527-1527/co.cheapshot.v1 E/chromium: [ERROR:filesystem_posix.cc(62)] mkdir /data/user/0/co.cheapshot.v1/cache/WebView/Crashpad: No such file or directory (2)
+2020-03-11 19:24:56.448 1527-1664/co.cheapshot.v1 I/FA: Tag Manager is not found and thus will not be used
+2020-03-11 19:24:56.487 1527-1808/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Landroid/media/AudioManager;->getOutputLatency(I)I (greylist, reflection, allowed)
+2020-03-11 19:24:56.490 1527-1822/co.cheapshot.v1 I/Adreno: QUALCOMM build                   : bc00834, I609ab310b2
+    Build Date                       : 04/11/19
+    OpenGL ES Shader Compiler Version: EV031.26.07.00
+    Local Branch                     : 
+    Remote Branch                    : 
+    Remote Branch                    : 
+    Reconstruct Branch               : 
+2020-03-11 19:24:56.490 1527-1822/co.cheapshot.v1 I/Adreno: Build Config                     : S L 8.0.6 AArch64
+2020-03-11 19:24:56.491 1527-1808/co.cheapshot.v1 W/cr_media: Requires BLUETOOTH permission
+2020-03-11 19:24:56.501 1527-1822/co.cheapshot.v1 I/Adreno: PFP: 0x005ff110, ME: 0x005ff066
+2020-03-11 19:24:56.501 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2020-03-11 19:24:56.512 1527-1527/co.cheapshot.v1 I/BranchSDK: !SDK-VERSION-STRING!:io.branch.sdk.android:library:4.3.2
+2020-03-11 19:24:56.547 1527-1822/co.cheapshot.v1 W/VideoCapabilities: Unrecognized profile 2130706433 for video/avc
+2020-03-11 19:24:56.547 1527-1822/co.cheapshot.v1 W/VideoCapabilities: Unrecognized profile 2130706434 for video/avc
+2020-03-11 19:24:56.548 1527-1822/co.cheapshot.v1 W/VideoCapabilities: Unrecognized profile 2130706433 for video/avc
+2020-03-11 19:24:56.549 1527-1822/co.cheapshot.v1 W/VideoCapabilities: Unrecognized profile 2130706434 for video/avc
+2020-03-11 19:24:56.556 1527-1822/co.cheapshot.v1 W/VideoCapabilities: Unrecognized profile 2130706433 for video/avc
+2020-03-11 19:24:56.556 1527-1822/co.cheapshot.v1 W/VideoCapabilities: Unrecognized profile 2130706434 for video/avc
+2020-03-11 19:24:56.629 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+2020-03-11 19:24:56.630 1527-1527/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+2020-03-11 19:24:56.688 1527-1527/co.cheapshot.v1 I/ConsentInformation: Use ConsentInformation.getInstance(context).addTestDevice("942E8F89EC4E94F74AA3A26676CBCA1E") to get test ads on this device.
+2020-03-11 19:24:56.801 1527-1881/co.cheapshot.v1 D/Log: Socket state changed = CONNECTING
+2020-03-11 19:24:56.833 1527-1527/co.cheapshot.v1 W/pool-18-thread-: type=1400 audit(0.0:4710): avc: denied { read } for name="cache" dev="dm-0" ino=16 scontext=u:r:untrusted_app:s0:c110,c263,c512,c768 tcontext=u:object_r:cache_file:s0 tclass=lnk_file permissive=0
+2020-03-11 19:24:56.849 1527-1730/co.cheapshot.v1 W/Ads: Update ad debug logging enablement as false
+2020-03-11 19:24:56.902 1527-1839/co.cheapshot.v1 W/Gralloc3: mapper 3.x is not supported
+2020-03-11 19:24:56.916 1527-1554/co.cheapshot.v1 I/co.cheapshot.v: Background young concurrent copying GC freed 242800(17MB) AllocSpace objects, 69(5628KB) LOS objects, 72% free, 9264KB/33MB, paused 139us total 120.587ms
+2020-03-11 19:24:56.940 1527-1527/co.cheapshot.v1 I/BranchSDK: onInstallReferrerSetupFinished, responseCode = 0
+2020-03-11 19:24:56.942 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /data/local/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /data/local/bin/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /data/local/xbin/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /sbin/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /su/bin/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /system/bin/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /system/bin/.ext/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /system/bin/failsafe/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /system/sd/xbin/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /system/usr/we-need-root/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /system/xbin/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /cache/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /data/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /dev/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /system/sbin/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /product/bin/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /apex/com.android.runtime/bin/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /odm/bin/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /vendor/bin/su Absent :(
+2020-03-11 19:24:56.943 1527-1850/co.cheapshot.v1 I/RootBeer: LOOKING FOR BINARY: /vendor/xbin/su Absent :(
+2020-03-11 19:24:56.966 1527-1527/co.cheapshot.v1 I/BranchSDK: onReferrerClientFinished()
+2020-03-11 19:24:57.056 1527-1527/co.cheapshot.v1 I/BranchSDK: Strong match request https://app.link/_strong_match?os=Android&hardware_id=io.branch.referral.SystemObserver$UniqueId@2a2b54fb&hardware_id_type=random&google_advertising_id=dc9d019d-04f1-4d93-9603-397bc893a0ee&app_version=1.0.54&branch_key=key_live_pgvJV1YxldAvMtznNKiFYkabswciF26L&sdk=android4.3.2
+2020-03-11 19:24:57.071 1527-1953/co.cheapshot.v1 D/Log: Socket state changed = co.cheapshot.v1.models.data.network.socket.SocketState$Connected@96616f0
+2020-03-11 19:24:57.085 1527-1875/co.cheapshot.v1 V/MediaPlayer: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+2020-03-11 19:24:57.085 1527-1875/co.cheapshot.v1 V/MediaPlayer: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+2020-03-11 19:24:57.154 1527-1527/co.cheapshot.v1 W/System.err: should see this - DEBUG - SplashFragment{68af381} (b586f098-56e1-416e-93c1-4b8ed6e4d94e) id=0x7f0a01a2} received ON_DESTROY
+2020-03-11 19:24:57.338 1527-1725/co.cheapshot.v1 W/co.cheapshot.v: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2020-03-11 19:24:57.354 1527-1690/co.cheapshot.v1 E/GraphResponse: {HttpStatus: 400, errorCode: 100, subErrorCode: 33, errorType: GraphMethodException, errorMessage: Unsupported get request. Object with ID '1609578652444069' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api}
+2020-03-11 19:24:57.531 1527-1667/co.cheapshot.v1 W/System: Ignoring header If-None-Match because its value was null.
+2020-03-11 19:24:57.576 1527-1711/co.cheapshot.v1 D/skia: --- Failed to create image decoder with message 'unimplemented'
+2020-03-11 19:24:57.806 1527-1527/co.cheapshot.v1 E/Log: com.google.firebase.remoteconfig.FirebaseRemoteConfigServerException: Fetch failed: The user is not authorized to access the project. Please make sure you are using the API key that corresponds to your Firebase project.
+        at com.google.firebase.remoteconfig.internal.ConfigFetchHandler.createExceptionWithGenericMessage(com.google.firebase:firebase-config@@19.1.1:368)
+        at com.google.firebase.remoteconfig.internal.ConfigFetchHandler.fetchFromBackend(com.google.firebase:firebase-config@@19.1.1:321)
+        at com.google.firebase.remoteconfig.internal.ConfigFetchHandler.fetchFromBackendAndCacheResponse(com.google.firebase:firebase-config@@19.1.1:267)
+        at com.google.firebase.remoteconfig.internal.ConfigFetchHandler.lambda$fetchIfCacheExpiredAndNotThrottled$1(com.google.firebase:firebase-config@@19.1.1:205)
+        at com.google.firebase.remoteconfig.internal.ConfigFetchHandler$$Lambda$2.then(Unknown Source:4)
+        at com.google.android.gms.tasks.zzf.run(Unknown Source:2)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+        at java.lang.Thread.run(Thread.java:919)
+     Caused by: com.google.firebase.remoteconfig.FirebaseRemoteConfigServerException: Forbidden
+        at com.google.firebase.remoteconfig.internal.ConfigFetchHttpClient.fetch(com.google.firebase:firebase-config@@19.1.1:189)
+        at com.google.firebase.remoteconfig.internal.ConfigFetchHandler.fetchFromBackend(com.google.firebase:firebase-config@@19.1.1:295)
